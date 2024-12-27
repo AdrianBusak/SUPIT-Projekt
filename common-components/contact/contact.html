@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="overlay">
+        <div id="content-form">
+            <div id="title">
+                <img src="/icons/icons-title/email-contact.png" alt="">
+                <h1>Kontaktirajte nas</h1>
+            </div>
+            <form action="">
+                <div class="fullname-div">
+                    <p>Puno ime</p>
+                    <input type="text" autofocus autocomplete="additional-name" name="fullName" id="fullName">
+                </div>
+                <div class="email-div">
+                    <p>E-mail</p>
+                    <input type="email" autocomplete="email" name="email" id="email">
+                </div>
+                <div id="importance-div">
+                    <p>Važnost poruke</p>
+                    <select name="importance" id="importance">
+                        <option value="High">Visoka</option>
+                        <option value="Medium">Srednja</option>
+                        <option value="Low">Niska</option>
+                    </select>
+                </div>
+                <div id="message">
+                    <p>Poruka</p>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <div id="notification-div">
+                    <div class="paragraph">
+                        <p>Želim primati obavjest</p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="notification" id="notification">
+                    </div>
+                </div>
+                <div id="buttons">
+                    <button class="btn1" type="submit">Pošalji</button>
+                    <button class="btn2">Odustani</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
