@@ -1,0 +1,35 @@
+html, body{
+    margin: 0;
+    padding: 0px;
+}
+
+footer{
+    background-image: url(/img/zaiskri-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 280px;
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+}
+
+footer h2{
+    margin: 0;
+    padding: 0px;
+}
+
+footer .first-title{
+    font-size: 65px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+footer .second-title{
+    font-size: 50px;
+    color: rgb(255, 23, 85);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.556);
+}
