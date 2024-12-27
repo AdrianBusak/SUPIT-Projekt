@@ -239,6 +239,16 @@ width: 100%;
     margin: 20px 60px;
 }
 
+.map-container{
+    height: 400px;
+    width: 93%;
+}
+
+.map-container .map{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 5px;}
 
 
 
