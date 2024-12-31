@@ -52,7 +52,7 @@ main .wall-picture h2{
     position: absolute;
     color: white;
     width: 50%;
-    font-size: 2.4em;
+    font-size: 2.2em;
     z-index: 10;
     text-shadow: 1px 1px 2px black;
 }
