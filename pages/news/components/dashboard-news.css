@@ -1,7 +1,3 @@
-html, body{
-    margin: 0px;
-    padding: 0px;
-}
 
 * {
     margin: 0;
@@ -9,36 +5,7 @@ html, body{
     box-sizing: border-box;
   }
 
-header{
-    width: 100%;
-    height: 65px; /*hard coded? */
-    position: fixed;
-    display: flex;
-    align-items: center;
-}
-
-iframe{            /*iframe header */
-    border: 0px;
-    width:100%;
-    height:100%;
-}
-
-footer{
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer iframe{
-    height: 230px;
-}
-
 main{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-top: 65px;
 }
 
@@ -60,8 +27,8 @@ main .title h1{
     justify-content: space-around;
     align-items: center;
     background-color: rgba(242, 242, 242, 0.57);
-    padding: 40px 180px;
-    margin-top: 40px;
+    padding: 35px 180px;
+    margin-top: 35px;
 }
 
 .content .news-box{
