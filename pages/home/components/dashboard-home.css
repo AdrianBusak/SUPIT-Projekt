@@ -1,27 +1,9 @@
-html, body{
-    margin: 0px;
-    padding: 0px;
-}
-
 header{
-    width: 100%;
-    height: 65px;
-    position: fixed;
     z-index: 20;
 }
 
-#nav-bar{            /*iframe header */
-    border: 0px;
-    width:100%;
-    height:100%; 
-}
-
 main{
-    width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .home-background-video{
