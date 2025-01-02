@@ -17,7 +17,7 @@ header{
     justify-content: center;
     align-items: center;
     gap: 25px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .nav-button{
@@ -33,7 +33,7 @@ header{
     
 }
 
-#nav-about div a{
+#nav-about div p{
     color: white;
     text-decoration: none;
     font-weight: 600;
