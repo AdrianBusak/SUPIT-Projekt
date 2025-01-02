@@ -24,6 +24,10 @@ footer iframe {
 	height: 230px;
 }
 
+footer{
+    line-height: 0px;
+}
+
 main {
     /* padding-top: 65px; */
 	width: 100%;
