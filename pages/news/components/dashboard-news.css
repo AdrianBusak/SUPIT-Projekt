@@ -38,6 +38,7 @@ main .title h1{
     flex-shrink: 0;
     height: 250px;
     width: 250px;
+    border-radius: 50%;
 }
 
 .content img{
@@ -47,6 +48,10 @@ main .title h1{
     border-radius: 50%;
     border: 20px solid rgb(228, 228, 228);
     box-shadow:0 0 12px rgba(118, 118, 118, 0.559);
+}
+
+.content a{
+    border-radius: 50%;
 }
 
 
@@ -62,6 +67,7 @@ main .title h1{
     padding: 40px;
     text-align: center;
     text-shadow: 1px 1px 5px black;
+    border-radius: 50%;
 }
 
 .content .yellow-text{
