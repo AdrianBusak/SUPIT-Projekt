@@ -25,16 +25,24 @@ header{
     justify-content: center;
     align-items: center;
     color: white;
+    text-decoration: none;
     gap: 3px;
 }
 
 #nav-about div img{
     height: 18px;
-    
 }
 
 #nav-about div p{
     color: white;
     text-decoration: none;
     font-weight: 600;
+}
+
+#nav-about a{
+    text-decoration: none;
+}
+
+#nav-about div p:hover{
+    color: rgb(255, 234, 96);
 }
