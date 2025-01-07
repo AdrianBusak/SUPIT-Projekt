@@ -12,7 +12,14 @@ main .wall-picture{
     display: flex;
     justify-content: center;
     align-items: center;
+    animation:moveFromTop 1s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
+
+@keyframes moveFromTop {
+  from{translate: 0 -100px;}
+  to{translate: 0 0;}
+}
+
 
 main .wall-picture img{
     width: 100%;
@@ -35,6 +42,18 @@ main .title{
     display: flex;
     justify-content: center;
     align-items: center;
+    animation:moveFromBottom 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+@keyframes moveFromBottom{
+  from{
+    translate: 0 50px;
+    opacity: 0;
+  }
+  to{
+    translate: 0 0;
+    opacity: 1;
+  }
 }
 
 main .title h1{

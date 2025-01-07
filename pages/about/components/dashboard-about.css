@@ -37,17 +37,14 @@ main{
 main .campus{
     width: 100%;
     height: 250px;
-    transition:1s;
-    transition-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1);
-    @starting-style{
-        translate: 0 -25vh;
-        
-    }
+    animation:moveFromTop 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+
 }
-/* 
-@keyframes fadein {
-    translate: 0 0;
-} */
+
+@keyframes moveFromTop {
+    from{translate: 0 -100px;}
+    to{translate: 0 0;}
+}
 
 main .campus img{
     width: 100%;
@@ -61,11 +58,17 @@ main .title{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 1s;
-    transition-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1);
+    animation:moveFromBottom 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
 
-    @starting-style{
-        translate: 0 10vh;
+@keyframes moveFromBottom{
+    from{
+      translate: 0 50px;
+      opacity: 0;
+    }
+    to{
+      translate: 0 0;
+      opacity: 1;
     }
 }
 

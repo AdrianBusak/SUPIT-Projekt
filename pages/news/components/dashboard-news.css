@@ -27,8 +27,8 @@ main .title h1{
     justify-content: space-around;
     align-items: center;
     background-color: rgba(242, 242, 242, 0.57);
-    padding: 35px 180px;
-    margin-top: 35px;
+    padding: 55px 180px;
+    margin-top: 55px;
 }
 
 .content .news-box{
