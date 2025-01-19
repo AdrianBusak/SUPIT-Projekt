@@ -1,48 +1,33 @@
-body,html{
-    margin: 0px;
+.bg-body-tertiary
+{
+    background-color: black !important;
 }
 
-header{
-    width: 100%;
-    height: 65px;
-    background-color: black;
+.navbar-nav .nav-item .nav-link{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    position: fixed;
-}
-
-#nav-about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    margin-left: 20px;
-}
-
-.nav-button{
-    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     color: white;
-    text-decoration: none;
     gap: 3px;
 }
 
-#nav-about div img{
+.navbar-nav .nav-item .nav-link:hover{
+    color: rgb(255, 234, 96);
+}
+
+.nav-item .nav-link img{
     height: 18px;
 }
 
-#nav-about div p{
+.nav-item .nav-link p{
     color: white;
-    text-decoration: none;
     font-weight: 600;
+    margin: 0;
 }
 
-#nav-about a{
-    text-decoration: none;
-}
-
-#nav-about div p:hover{
-    color: rgb(255, 234, 96);
+.navbar-toggler{
+    background-color: orange;
+    width: 2.2em;
+    height: 2.2em;
 }
