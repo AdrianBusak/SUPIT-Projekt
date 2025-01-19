@@ -39,7 +39,6 @@ height: 100%;
 form p, form input,
 form button{
     width: 100%;
-
 }
 
 form input{
@@ -57,6 +56,7 @@ form button{
 form p{
     font-weight: 600;
     margin-top: 8px;
+    margin-bottom: 0;
 }
 
 form #submit{
@@ -69,6 +69,10 @@ form #submit{
     justify-content: flex-start;
     align-items: center;
     gap: 5px;
+}
+
+#swap-div p{
+    margin: 0;
 }
 
 #swap-div a{

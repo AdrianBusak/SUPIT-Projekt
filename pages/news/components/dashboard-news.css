@@ -88,6 +88,10 @@ main .title h1{
     border-radius: 50%;
 }
 
+#content p{
+    margin: 0;
+}
+
 #content a{
     padding: 10px;
     border-radius: 50%;
