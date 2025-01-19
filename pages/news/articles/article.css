@@ -1,9 +1,16 @@
+body{
+  display: flex;
+  flex-direction: column;
+}
+
 header{
+  display: block;
   z-index: 10;
+  height: fit-content;
 }
 
 main{
-    padding-top: 65px;
+  padding-top: 55px;
 }
 
 main .wall-picture{
