@@ -1,3 +1,5 @@
+// import { addModule } from "../header/modal-contact.js";
+
 $(document).ready(function() {
     console.log('HTML je učitan i spreman!');
 });
@@ -10,7 +12,6 @@ if($(document).ready()){
         .then((data) => 
         {
             document.querySelector('header').innerHTML += data;
-            console.log(document.querySelector('header').innerHTML);
             const toggler = document.querySelector('.navbar-toggler');
             const navbarNav = document.querySelector('#navbarNav');
 
@@ -22,3 +23,10 @@ if($(document).ready()){
         })
         .catch(()=> console.log("header faild to load"));
 }
+
+if($(document).ready(function(){
+    $.get('/common-components/contact/contact-modal.html', (data) => {
+        console.log(data);
+        $('body').append(data);
+    });
+}));

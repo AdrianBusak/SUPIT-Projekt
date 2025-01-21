@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-body,html{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
 
-.overlay{
-    background-color: rgba(0, 0, 0, 0.081);
+.modal-body{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,8 +8,10 @@ body,html{
     height: 100%;
 }
 
-#content-form{
-    width: 50%;
+#content-form, form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border-radius: 5px;
     padding: 15px;
@@ -28,8 +23,10 @@ body,html{
     justify-content: flex-start;
     align-items: center;
     color: #11015A;
-    border-bottom: 2px solid rgba(223, 223, 223, 0.563);
-    padding-bottom: 10px;
+}
+
+.modal-header{
+    padding: 10px 20px;
 }
 
 #title h1{
@@ -47,7 +44,7 @@ body,html{
 #content-form p{
     font-size: 0.9em;
     font-weight: 500;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.1em;
 }
 
 #content-form input, #content-form select,
@@ -57,6 +54,7 @@ body,html{
     border: 2px solid rgb(215, 215, 215);
     border-radius: 5px;
     margin: 0px;
+    margin-bottom: 0.6em;
     padding: 5px;
     box-sizing: border-box;
 }
@@ -86,26 +84,5 @@ body,html{
     height: 14px;
 }
 
-#buttons{
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-    padding: 5px;
-}
 
-#buttons button{
-    font-family: "Roboto";
-    padding: 12px;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    font-weight: 500;
-}
 
-#buttons .btn1{
-    background-color: rgb(61, 61, 201);
-    margin-right: 10px;
-}
-
-#buttons .btn2{
-    background-color: rgb(180, 19, 19);
-}
