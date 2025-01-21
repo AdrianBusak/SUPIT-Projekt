@@ -11,7 +11,14 @@ if($(document).ready()){
         })
         .then((data) => 
         {
-            document.querySelector('header').innerHTML += data;
+            if(!document.querySelector('header')){
+                const header = document.createElement('header');
+                header.innerHTML = data;
+                console.log(header);
+                document.querySelector('body').prepend(header);
+            }else{
+                document.querySelector('header').innerHTML += data;
+            }
             const toggler = document.querySelector('.navbar-toggler');
             const navbarNav = document.querySelector('#navbarNav');
 
@@ -19,7 +26,7 @@ if($(document).ready()){
                 toggler.addEventListener('click', function () {
                     navbarNav.classList.toggle('show');
                 });
-        }
+            }
         })
         .catch(()=> console.log("header faild to load"));
 }
