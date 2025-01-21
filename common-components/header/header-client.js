@@ -1,39 +1,22 @@
 // import { addModule } from "../header/modal-contact.js";
 
-$(document).ready(function() {
-    console.log('HTML je učitan i spreman!');
-});
- 
-if($(document).ready()){
+document.addEventListener('DOMContentLoaded', function () {
     fetch("/common-components/header/header.html")
-        .then((response) => {
-            return response.text();
-        })
-        .then((data) => 
-        {
-            if(!document.querySelector('header')){
+        .then(response => response.text())
+        .then(data => {
+            if (!document.querySelector('header')) {
                 const header = document.createElement('header');
                 header.innerHTML = data;
-                console.log(header);
                 document.querySelector('body').prepend(header);
-            }else{
+            } else {
                 document.querySelector('header').innerHTML += data;
             }
-            const toggler = document.querySelector('.navbar-toggler');
-            const navbarNav = document.querySelector('#navbarNav');
-
-            if (toggler && navbarNav) {
-                toggler.addEventListener('click', function () {
-                    navbarNav.classList.toggle('show');
-                });
-            }
         })
-        .catch(()=> console.log("header faild to load"));
-}
+        .catch(() => console.log("Header failed to load"));
+});
 
-if($(document).ready(function(){
+$(document).ready(function () {
     $.get('/common-components/contact/contact-modal.html', (data) => {
-        console.log(data);
         $('body').append(data);
     });
-}));
+});
