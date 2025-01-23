@@ -24,7 +24,7 @@ main{
 }
 
 #form-container {
-width: 20%;
+width: 350px;
 height: 100%;
 }
 
@@ -79,6 +79,28 @@ form #submit{
     text-decoration: none;
     color: rgb(28, 79, 230);
     font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+
+    main {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    #form-container {
+        width: 80%;
+    }
+
+    #swap-div {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    footer {
+        padding-top: 20px;
+    }
 }
 
 

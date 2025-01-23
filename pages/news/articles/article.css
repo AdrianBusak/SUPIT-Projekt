@@ -222,3 +222,38 @@ main .title h1{
     width: 94%;
     height: 100%;
   }
+
+  @media screen and (max-width: 768px) {
+    body {
+      flex-direction: column;
+    }
+  
+    main .wall-picture {
+      height: 200px;
+    }
+  
+    main .wall-picture h2 {
+      font-size: 1.5em;
+      width: 80%;
+      text-align: center; 
+    }
+  
+    main .title {
+      width: 80%;
+    }
+  
+    .text {
+      width: 90%;
+      font-size: 1em;
+    }
+  
+    .video-container {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .video-container video {
+      width: 100%;
+    }
+  }
+  
