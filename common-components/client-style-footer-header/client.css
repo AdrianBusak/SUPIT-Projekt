@@ -4,14 +4,14 @@ body {
 	padding: 0px;
 }
 
-header {
+/* header {
 	width: 100%;
 	height: fit-content;
 	position: fixed;
 	display: block;
 	align-items: center;
 	z-index: 1000;
-}
+} */
 
 iframe {
 	bottom: 0;
