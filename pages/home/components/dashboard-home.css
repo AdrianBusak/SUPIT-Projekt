@@ -32,6 +32,7 @@ main .typeWriter-text {
     justify-content: center;
     align-items: center;
     text-align: center;
+    max-width: 60%;
 }
 
 main .typeWriter-text .text,
@@ -41,7 +42,7 @@ main .typeWriter-text .text,
     font-size: 45px;
     box-sizing: border-box;
     margin: 0px;
-    padding: 10px;
+    padding: 0px;
     z-index: 50;
 }
 

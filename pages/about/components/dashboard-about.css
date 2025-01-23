@@ -34,6 +34,7 @@ main {
     flex-direction: row;
     gap: 30px;
     right: 30px;
+    top: 15px;
     opacity: 0;
     animation-name: fade_in_and_bounce_from_right;
     animation-duration: 1.1s;
