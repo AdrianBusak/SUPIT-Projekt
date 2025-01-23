@@ -11,7 +11,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 230px;
+    height: 190px;
     width: 100%;
     margin: 0;
     padding: 0px;
@@ -37,10 +37,14 @@ footer .second-title{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.556);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     footer h2{
-        font-size: 40px;
-
+        font-size: 30px;
     }
-
+    footer .first-title{
+        margin-bottom: 10px;
+    }
+    footer{
+        height: 120px;
+    }
 }

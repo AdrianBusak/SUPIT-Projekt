@@ -9,18 +9,22 @@ body {
     padding: 0;
     box-sizing: border-box;
   }
-
+/* 
 footer{
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
-    height: 26%;
-}
+} */
 
 main{
     flex: 1;
-    padding-top: 65px;
-    padding-bottom: 230px;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #form-container {
@@ -84,8 +88,8 @@ form #submit{
 @media screen and (max-width: 768px) {
 
     main {
-        padding-top: 50px;
-        padding-bottom: 100px;
+        padding-top: 100px;
+        padding-bottom: 50px;
     }
 
     #form-container {
@@ -96,10 +100,6 @@ form #submit{
         flex-direction: column;
         gap: 10px;
         text-align: center;
-    }
-
-    footer {
-        padding-top: 20px;
     }
 }
 
