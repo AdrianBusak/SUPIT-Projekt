@@ -352,3 +352,157 @@ footer{
         padding: 0;
     }
 }
+
+@media (max-width: 768px) {
+    body,html{
+        width: 100%;
+    }
+
+    main .campus {
+        width: 100%;
+        height: 40%;
+    }
+
+    .nav-about-right {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .nav-about-right .right-bar-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .grid-container-logos {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .location-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .title h1 {
+        font-size: 1.5em;
+    }
+
+    .about-section .sub-title h2 {
+        font-size: 1.2em;
+    }
+
+    .box h3 {
+        font-size: 1.1em;
+    }
+
+    .box p {
+        font-size: 14px;
+    }
+}
+
+/* Default styles for desktop/tablet */
+.location-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.left-container, .right-container {
+    width: 48%; /* Adjusted for desktop/tablet */
+}
+
+.article {
+    margin-bottom: 20px;
+}
+
+.sub-title-map {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.sub-title-map img {
+    width: 25px;
+    height: 25px;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-family: "Teko", serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Map Container */
+.map-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.map {
+    width: 100%;
+    height: 300px; /* Keep it fixed on desktop/tablet */
+}
+
+/* Tablet View (between 481px and 768px) */
+@media (max-width: 768px) {
+
+    /* Change location container layout for tablet */
+    .location-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-container, .right-container {
+        width: 100%; /* Full width for each container */
+        margin-bottom: 30px;
+    }
+
+    .article {
+        margin-bottom: 15px;
+    }
+
+    .sub-title-map {
+        justify-content: flex-start;
+        margin-bottom: 15px;
+    }
+
+    .sub-title-map img {
+        width: 20px; /* Smaller icons */
+        height: 20px;
+    }
+
+    h3 {
+        font-size: 1.1em; /* Slightly smaller heading size */
+    }
+
+    .map {
+        height: 250px; /* Adjust map height for tablet */
+    }
+}
+
+/* Mobile Small View (e.g., smaller phones, max-width: 480px) */
+@media (max-width: 480px) {
+
+    .sub-title-map img {
+        width: 18px; /* Further reduce icon size */
+        height: 18px;
+    }
+
+    .map {
+        height: 220px; /* Adjust map height for very small screens */
+    }
+
+    h3 {
+        font-size: 1em; /* Further reduce heading size */
+    }
+
+    .location-container {
+        gap: 20px; /* Reduce gap between containers */
+    }
+}

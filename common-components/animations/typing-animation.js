@@ -12,6 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .deleteChars(6)
         .typeString('<span class="text">voliš.</span>')
         .pauseFor(300)
-        .typeString('</br><span class="text">ZAISKRI</span>')
+        .typeString('</br><span class="text" style="color:rgb(184, 0, 0);">ZAISKRI.</span>')
         .start();
 });
