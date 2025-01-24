@@ -1,4 +1,3 @@
-// import { addModule } from "../header/modal-contact.js";
 
 document.addEventListener('DOMContentLoaded', function () {
     fetch("/common-components/header/header.html")

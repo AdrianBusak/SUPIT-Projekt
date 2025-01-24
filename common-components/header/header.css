@@ -40,3 +40,14 @@ header {
     width: 2.2em;
     height: 2.2em;
 }
+
+.nav-item .disabled p
+{
+    color: rgba(128, 128, 128, 0.662);
+}
+
+.nav-item .disabled
+{
+    filter: grayscale(60%);
+}
+
