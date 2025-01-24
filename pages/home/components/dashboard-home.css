@@ -34,13 +34,9 @@ main .container-typing-text{
     text-align: center;
 }
 
-main .typeWriter-text .text {
-    color: white;
-    font-family: sans-serif;
-    font-size: 45px;
-}
-
+main .typeWriter-text .text, 
 .Typewriter__cursor{
     color: white;
+    font-family: sans-serif;
     font-size: 45px;
 }
