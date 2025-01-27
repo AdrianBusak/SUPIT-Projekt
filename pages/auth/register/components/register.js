@@ -26,7 +26,7 @@ const username = $('#username');
 const password = $('#password');
 
 
-form.addEventListener('submit', (event) => {
+form.on('submit', (event) => { // isto kao addEventListener
   event.preventDefault();
 
   const userData = {
