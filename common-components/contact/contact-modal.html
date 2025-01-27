@@ -24,20 +24,20 @@
             </div>
           <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
         </div>
+        <form action="https://www.fulek.com/mvc/supit/project-contact-form">
         <div class="modal-body">
             <div id="content-form">
-                <form action="">
                     <label for="fullName" class="fullname-div">
                         <p>Puno ime</p>
-                        <input type="text" autofocus autocomplete="additional-name" name="fullName" id="fullName">
+                        <input type="text" autofocus autocomplete="additional-name" name="FullName" id="fullName">
                     </label>
                     <label for="email" class="email-div">
                         <p>E-mail</p>
-                        <input type="email" autocomplete="email" name="email" id="email">
+                        <input type="email" autocomplete="email" name="Email" id="email">
                     </label>
                     <label for="importance" id="importance-div">
                         <p>Važnost poruke</p>
-                        <select name="importance" id="importance">
+                        <select name="Importance" id="importance">
                             <option value="High">Visoka</option>
                             <option value="Medium">Srednja</option>
                             <option value="Low">Niska</option>
@@ -45,29 +45,21 @@
                     </label>
                     <label for="message" id="message">
                         <p>Poruka</p>
-                        <textarea name="message" id="message"></textarea>
+                        <textarea name="Message" id="message"></textarea>
                     </label>
                     <label for="notification" id="notification-div">
-                        <label for="notification">
                             <p>Želim primati obavjest</p>
-                        </label>
-                        <label for="notification">
-                            <input type="checkbox" name="notification" id="notification">
-                        </label>
+                            <input type="checkbox" name="ReceiveNewsletter" id="notification">
                     </label>
-                    <!-- <div id="buttons">
-                        <button class="btn1" type="submit">Pošalji</button>
-                        <button class="btn2">Odustani</button>
-                    </div> -->
-                </form>
+                </div>
             </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
-            Close
-          </button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                    Close
+                </button>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+        </form>
       </div>
     </div>
   </div>

@@ -7,7 +7,6 @@ function waitForCurriculums() {
             disableCurriculums();
         }
     } else {
-        console.log("Čekam na učitavanje '.curriculums'...");
         setTimeout(waitForCurriculums, 100); // pokusaj dohvatiti svakih 100ms
     }
 }
