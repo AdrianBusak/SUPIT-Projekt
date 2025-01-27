@@ -19,3 +19,13 @@ $(document).ready(function () {
         $('body').append(data);
     });
 });
+
+
+const script = document.createElement('script');
+script.src = '/common-components/header/header.js'; // Postavlja putanju do fajla
+script.type = 'text/javascript';
+script.defer = true; //Osigurava da se izvršava nakon parsiranja HTML-a
+document.addEventListener('DOMContentLoaded', () => {
+    document.body.append(script);
+});
+

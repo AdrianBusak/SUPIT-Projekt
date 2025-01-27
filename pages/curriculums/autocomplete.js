@@ -32,24 +32,24 @@ async function getAllCurriculums() {
 }
 
 
-let availableTags = [];
+let curriculumsNames = [];
 
 (async () => {
   try {
     const curriculums = await getAllCurriculums();
     console.log("Dohvaćeni kolegiji:", curriculums);
     curriculums.forEach(element => {
-      availableTags.push(element.kolegij);
+      curriculumsNames.push(element.kolegij);
     });
   } catch (error) {
     console.error("Nije moguće dohvatiti kolegije:", error);
   }
 })();
 
-console.log(availableTags);
+console.log(curriculumsNames);
 
 $( function() {
   $( "#tags" ).autocomplete({
-    source: availableTags
+    source: curriculumsNames
   });
 } );
