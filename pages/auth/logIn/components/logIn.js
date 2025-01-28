@@ -27,7 +27,7 @@ form.on('submit', function (event) {
             location.replace('/pages/home/components/dashboard-home.html');
         }, 3000);
       } else {
-        alert('Greška kod prijave.');
+        alert('Pogrešno upisano korisničko ime ili lozinka.');
       }
     },
     error: function (xhr, status, error) {

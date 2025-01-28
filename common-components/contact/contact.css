@@ -78,11 +78,26 @@
     margin: 0;
 }
 
-#notification-div input{
-    margin-top: 4px;
+.checkbox-div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#notification-div  input{
+    margin-top: 45%;
     margin-left: 6px;
     height: 14px;
+
 }
 
 
+@media only screen and (max-width: 768px) {
+    #title h1{
+        font-size: 30px;
+    }
+    form,#content-form{
+        padding: 0px;
+    }
 
+}

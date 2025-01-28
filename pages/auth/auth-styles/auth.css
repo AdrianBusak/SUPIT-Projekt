@@ -72,7 +72,8 @@ form #submit{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 5px;
+    padding-left: 15px;
+    gap: 6px;
 }
 
 #swap-div p{
@@ -83,6 +84,11 @@ form #submit{
     text-decoration: none;
     color: rgb(28, 79, 230);
     font-weight: 900;
+}
+
+#swap-div a:hover{
+    color: rgb(88, 122, 224);
+    animation-duration: 0.125s;
 }
 
 @media screen and (max-width: 768px) {
