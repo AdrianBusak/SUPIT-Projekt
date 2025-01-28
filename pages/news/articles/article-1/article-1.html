@@ -1,109 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/pages/news/articles/article.css" />
-		<script src="/packages/node_modules/jquery/dist/jquery.js"></script>
-		<script src="/pages/news/articles/article-1/article-1.js"></script>
-		<link rel="icon" href="/img/Algebra-logo.png" />
-		<title>SUPIT</title>
-	</head>
-	<body>
-		<main>
-			<div class="wall-picture">
-				<img src="/img/novost1.jpg" alt="no response" />
-				<h2>
-					Student Josip Stanešić 12. je sistemaš svijeta i dobitnik medalje
-					izvrsnost.
-				</h2>
-			</div>
-			<div class="title">
-				<h1>WorldSkills natjecanje - Kazen 2019.</h1>
-			</div>
-			<div class="text">
-				<p>
-					Nakon godinu dana priprema za natjecanje WorldSkills Kazan 2019 na
-					kojem je sudjelovalo 1300 natjecatelja iz cijelog svijeta, trud se
-					itekako isplatio. Josip, student 3. godine preddiplomskog studija
-					sistemskog inženjerstva osvojio je 12. mjesto u vještini IT Networks
-					and System Administration te osvojio medalju izvrsnosti! Čestitke
-					Josipu ali i njegovim/našim mentorima koji su ga pripremali za ovo
-					natjecanje – voditelju studija sistemskog inženjerstva Silviju Papiću,
-					voditelju katedre za operacijske sustave – Vedranu Dakiću i asistentu
-					na studiju sistemskog inženjerstva – Jasminu Redžepagiću. Čestitke i
-					našem studentu 3.godine preddiplomskog studija programskog
-					inženjerstva Josipu Horvatu i mentoru voditelju katedre za programsko
-					inženjerstvo - Goranu Đambiću na osvojenom 16.mjestu u vještini IT
-					Software Solutions for Business.
-				</p>
-			</div>
-            <div class="video-container">
-			<div class="gallery">
-				<div class="row">
-					<div class="column">
-						<img
-							src="/img/galerija1.jpg"
-							onclick="openModal();currentSlide(1)"
-							class="hover-shadow"
-						/>
-					</div>
-					<div class="column">
-						<img
-							src="/img/galerija2.jpg"
-							onclick="openModal();currentSlide(2)"
-							class="hover-shadow"
-						/>
-					</div>
-				</div>
-
-				<!-- The Modal/Lightbox -->
-				<div id="myModal" class="modal">
-					<span class="close cursor" onclick="closeModal()">&times;</span>
-					<div class="modal-content">
-						<div class="mySlides">
-							<div class="numbertext">1 / 2</div>
-							<img src="/img/galerija1.jpg" style="width: 100%" />
-						</div>
-
-						<div class="mySlides">
-							<div class="numbertext">2 / 2</div>
-							<img src="/img/galerija2.jpg" style="width: 100%" />
-						</div>
-
-						<!-- Next/previous controls -->
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-						<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-						<!-- Caption text -->
-						<div class="caption-container">
-							<p id="caption"></p>
-						</div>
-
-						<!-- Thumbnail image controls -->
-						<div class="column">
-							<img
-								class="demo"
-								src="/img/galerija1.jpg"
-								onclick="currentSlide(1)"
-							/>
-						</div>
-
-						<div class="column">
-							<img
-								class="demo"
-								src="/img/galerija2.jpg"
-								onclick="currentSlide(2)"
-							/>
-						</div>
-					</div>
-				</div>
-			</div>
-            
-                <video src="/video/worldskills.mp4"></video>
-            </div>
-		</main>
-		<script src="/common-components/header/header-client.js"></script>
-		<script src="/common-components/footer/footer-client.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/pages/news/articles/article.css" />
+    <script src="/packages/node_modules/jquery/dist/jquery.js"></script>
+    <!-- <script src="/pages/news/articles/article-1/article-1.js"></script> -->
+    <link rel="icon" href="/img/Algebra-logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <title>SUPIT</title>
+  </head>
+  <body>
+    <main>
+      <div class="wall-picture">
+        <img src="/img/novost1.jpg" alt="no response" />
+        <h2>
+          Student Josip Stanešić 12. je sistemaš svijeta i dobitnik medalje
+          izvrsnost.
+        </h2>
+      </div>
+      <div class="title">
+        <h1>WorldSkills natjecanje - Kazen 2019.</h1>
+      </div>
+      <div class="text">
+        <p>
+          Nakon godinu dana priprema za natjecanje WorldSkills Kazan 2019 na
+          kojem je sudjelovalo 1300 natjecatelja iz cijelog svijeta, trud se
+          itekako isplatio. Josip, student 3. godine preddiplomskog studija
+          sistemskog inženjerstva osvojio je 12. mjesto u vještini IT Networks
+          and System Administration te osvojio medalju izvrsnosti! Čestitke
+          Josipu ali i njegovim/našim mentorima koji su ga pripremali za ovo
+          natjecanje – voditelju studija sistemskog inženjerstva Silviju Papiću,
+          voditelju katedre za operacijske sustave – Vedranu Dakiću i asistentu
+          na studiju sistemskog inženjerstva – Jasminu Redžepagiću. Čestitke i
+          našem studentu 3.godine preddiplomskog studija programskog
+          inženjerstva Josipu Horvatu i mentoru voditelju katedre za programsko
+          inženjerstvo - Goranu Đambiću na osvojenom 16.mjestu u vještini IT
+          Software Solutions for Business.
+        </p>
+      </div>
+      <div class="container-gallery">
+        <div class="gallery">
+          <a
+            data-fancybox="gallery"
+            data-src="/img/galerija1.jpg"
+            class="fancy-box-a"
+          >
+            <img class="fancy-box" src="/img/galerija1.jpg" alt="" />
+          </a>
+          <a
+            data-fancybox="gallery"
+            data-src="/img/galerija2.jpg"
+            class="fancy-box-a"
+          >
+            <img class="fancy-box" src="/img/galerija2.jpg" alt="" />
+          </a>
+        </div>
+        <div class="video-container">
+          <video src="/video/worldskills.mp4" controls></video>
+        </div>
+      </div>
+    </main>
+    <script src="/common-components/header/header-client.js"></script>
+    <script src="/common-components/footer/footer-client.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        //
+      });
+    </script>
+  </body>
 </html>
