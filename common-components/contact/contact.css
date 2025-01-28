@@ -91,6 +91,11 @@
 
 }
 
+#exampleModal {
+    display: none;
+}
+
+
 
 @media only screen and (max-width: 768px) {
     #title h1{

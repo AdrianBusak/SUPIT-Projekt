@@ -15,10 +15,15 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 $(document).ready(function () {
-    $.get('/common-components/contact/contact-modal.html', (data) => {
-        $('body').append(data);
-    });
+    $.get('/common-components/contact/contact-modal.html')
+        .done((data) => { // izvrsi nakon dohvacanja html a
+            $('body').append(data);
+        })
+        .fail((error) => {
+            console.error('Failed to load the contact modal:', error);
+        });
 });
+
 
 
 const script = document.createElement('script');
