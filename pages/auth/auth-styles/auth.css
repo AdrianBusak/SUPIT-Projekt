@@ -40,32 +40,43 @@ height: 100%;
     text-transform: uppercase;
 }
 
-form p, form input,
+#auth-form p, #auth-form input,
 form button{
     width: 100%;
 }
 
-form input{
+#auth-form input{
     padding: 0px 10px;
 }
 
-form input,
-form button{
+#auth-form input,
+#auth-form button{
     height: 36px;
     margin: 7px 0;
     border-radius: 5px;
     border: 2px solid rgb(221, 221, 221);
 }
 
-form p{
+#auth-form p{
     font-weight: 600;
     margin-top: 8px;
     margin-bottom: 0;
 }
 
-form #submit{
+#auth-form #submit{
     background-color: rgb(69, 69, 69);
     color: white;
+}
+
+#auth-form #submit:hover{
+    background-color: rgb(177, 177, 177);
+    font-weight: 600;
+    color: black;
+    transition: 0.2s;
+}
+
+#auth-form #submit:active{
+    background-color:rgb(46, 0, 173);
 }
 
 #swap-div{
@@ -89,6 +100,10 @@ form #submit{
 #swap-div a:hover{
     color: rgb(88, 122, 224);
     animation-duration: 0.125s;
+}
+
+.counting{
+    color: red;
 }
 
 @media screen and (max-width: 768px) {

@@ -44,6 +44,7 @@ main .title h1{
     align-items: center;
     background-color: rgba(242, 242, 242, 0.57);
     margin: 95px 280px;
+    padding: 30px 30px;
     /* margin-top: 55px; */
 }
 
