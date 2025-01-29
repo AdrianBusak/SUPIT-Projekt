@@ -36,10 +36,13 @@ main .title{
 
 .container-flex{
     /* border: 2px solid black; */
-    margin-top: 50px;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
     width: 80%;
     flex-wrap: wrap;
     padding: 20px;
@@ -121,8 +124,9 @@ main .title{
 }
 
 .container-table{
-    /* width: 48%; */
     min-width: 55%;
+    border: 1px solid rgba(206, 206, 206, 0.281);
+    border-radius: 8px;
 }
 
 .container-table tfoot{
@@ -133,8 +137,25 @@ main .title{
     display: none;
 }
 
-/* .ui-autocomplete-input {
-    max-width: 300px;
-    max-height: 200px;
-    overflow-y: auto;
-} */
+@media screen and (max-width: 768px) {
+    .container-flex{
+        width: 100%;
+    }
+    
+    .ui-autocomplete {
+        width: 72% !important;
+    }
+    .ui-widget{
+        width: 80%;
+    }
+    .container-input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .container-table{
+        width: 80%;
+        margin-top: 80px;
+    }
+}

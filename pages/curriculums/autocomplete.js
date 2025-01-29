@@ -15,7 +15,6 @@ async function getAllCurriculums() {
           Authorization: `Bearer ${token}`,
         },
         success: function (data) {
-          console.log("Svi kolegiji:", data.data);
           resolve(data.data); // sto vraca promise
         },
         error: function (xhr, status, error) { //XMLHttpRequest Object
@@ -37,7 +36,6 @@ let curriculumsNames = [];
 (async () => { 
   try {
     const curriculumsTemp = await getAllCurriculums();
-    console.log("Dohvaćeni kolegiji:", curriculumsTemp);
     curriculumsTemp.forEach(element => {
       curriculums.push(element);
       curriculumsNames.push(element.kolegij);
@@ -47,7 +45,6 @@ let curriculumsNames = [];
   }
 })(); //() - pozovi odma
 
-console.log(curriculumsNames);
 
 $( function() {
   $( "#tags" ).autocomplete({
@@ -170,7 +167,6 @@ function calculateMath(){
     results.lectures += parseInt(curriculum.predavanja);
     results.labs += parseInt(curriculum.vjezbe);
   });
-  console.log(results);
 
   displayResults(results);
 }
