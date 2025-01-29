@@ -108,6 +108,12 @@ main .title h1{
   border-radius: 6px;
 }
 
+.fancy-box:hover{
+  transform: scale(1.05);
+  transition: all .225s ease-in-out;
+  box-shadow: 2px 2px 6px black;
+}
+
 .video-container {
   width: 100%;
   display: flex;
