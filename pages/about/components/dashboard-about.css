@@ -486,23 +486,3 @@ h3 {
     }
 }
 
-/* Mobile Small View (e.g., smaller phones, max-width: 480px) */
-@media (max-width: 480px) {
-
-    .sub-title-map img {
-        width: 18px; /* Further reduce icon size */
-        height: 18px;
-    }
-
-    .map {
-        height: 220px; /* Adjust map height for very small screens */
-    }
-
-    h3 {
-        font-size: 1em; /* Further reduce heading size */
-    }
-
-    .location-container {
-        gap: 20px; /* Reduce gap between containers */
-    }
-}

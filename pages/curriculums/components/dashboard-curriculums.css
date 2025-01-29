@@ -1,4 +1,3 @@
-
 body,html{
     height: 100%;
     display: flex;
@@ -41,7 +40,7 @@ main .title{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 70%;
+    width: 80%;
     flex-wrap: wrap;
     padding: 20px;
 }
@@ -51,8 +50,51 @@ main .title{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    min-width: 48%;
+    min-width: 40%;
     box-sizing: border-box;
+    animation: fade_in_and_bounce_from_right;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.table th, .table td{
+    padding: 5px !important;
+}
+
+@keyframes fade_in_and_bounce_from_right
+{
+    0%, 60%, 75%, 90%, 100%
+    {
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0%
+    {
+        opacity: 0;
+        transform: translateX(2000px);
+    }
+
+    60%
+    {
+        opacity: 1;
+        transform: translateX(-25px);
+    }
+
+    75%
+    {
+        transform: translateX(15px);
+    }
+
+    90%
+    {
+        transform: translateX(-5px);
+    }
+
+    100%
+    {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .ui-autocomplete {
@@ -62,7 +104,6 @@ main .title{
     overflow: auto;
     max-height: 28%;
 }
-
 
 .ui-widget{
     display: block;
@@ -81,7 +122,15 @@ main .title{
 
 .container-table{
     /* width: 48%; */
-    min-width: 48%;
+    min-width: 55%;
+}
+
+.container-table tfoot{
+    border-top: 2px solid black;
+}
+
+.container-table-visibility{
+    display: none;
 }
 
 /* .ui-autocomplete-input {
