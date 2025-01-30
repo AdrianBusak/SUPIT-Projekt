@@ -6,6 +6,7 @@ async function getAllCurriculums() {
   }
 
   const url = "https://www.fulek.com/data/api/supit/curriculum-list/hr";
+// Promise je objekt koji predstavlja rezultat async operacije
   try {
     const data = await new Promise((resolve, reject) => {// stvaramo promise u koji cemo spremit podatke koje dobijemo sa servera
       $.ajax({
@@ -52,8 +53,6 @@ $( function() {
   });
 } );
 
-// Promise je objekt koji predstavlja rezultat asinhrone operacije
-//  koja se još nije dovršila. Kada ta operacija završi, Promise se može "razriješiti" (resolve) s rezultatom ili "odbiti" (reject) ako je došlo do greške.
 
 
 //Dodavanje u tablicu
@@ -126,11 +125,11 @@ function CreateHtmlItem(item) {
 }
 
 // Prikaz kolegija u tablici
-function displayItems(toDoItems) {
+function displayItems(items) {
   const tbody = document.querySelector("tbody");
   let html = "";
 
-  toDoItems.forEach((item) => {
+  items.forEach((item) => {
     html += CreateHtmlItem(item);
   });
 
