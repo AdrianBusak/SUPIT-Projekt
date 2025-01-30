@@ -119,8 +119,9 @@ form button{
 
     #swap-div {
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
         text-align: center;
+        padding: 0px;
     }
 }
 
