@@ -17,7 +17,6 @@ form.on("submit", function (event) {
       method: "POST",
       contentType: "application/json", // tip podataka koji se salje na server
       data: JSON.stringify(userData),
-      dataType: "json", //odgovor od servera
       success: function (response) {
         if (response.isSuccess) {
           // Ako je prijava uspješna
@@ -32,7 +31,6 @@ form.on("submit", function (event) {
         }
       },
       error: function (xhr, status, error) {
-        // Ako dođe do greške tijekom zahtjeva
         console.error("Greška:", error);
         alert("Došlo je do greške prilikom povezivanja sa serverom.");
       },

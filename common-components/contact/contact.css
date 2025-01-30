@@ -1,108 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
-.modal-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+.modal-body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
 }
 
-#content-form, form{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 5px;
-    padding: 15px;
-    font-family: "Roboto", serif;
+#content-form,
+form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	border-radius: 5px;
+	padding: 15px;
+	font-family: "Roboto", serif;
 }
 
-#title{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: #11015A;
+#title {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: #11015a;
 }
 
-.modal-header{
-    padding: 10px 20px;
+.modal-header {
+	padding: 10px 20px;
 }
 
-#title h1{
-    margin: 0;
-    margin-left: 15px;
-    padding-bottom: 0;
-    font-size: 42px;
-    font-weight: 200;
+#title h1 {
+	margin: 0;
+	margin-left: 15px;
+	padding-bottom: 0;
+	font-size: 42px;
+	font-weight: 200;
 }
 
-#title img{
-    height: 42px;
+#title img {
+	height: 42px;
 }
 
-#content-form p{
-    font-size: 0.9em;
-    font-weight: 500;
-    margin-bottom: 0.1em;
+#content-form p {
+	font-size: 0.9em;
+	font-weight: 500;
+	margin-bottom: 0.1em;
 }
 
-#content-form input, #content-form select,
-#content-form textarea{
-    width: 100%;
-    height: 35px;
-    border: 2px solid rgb(215, 215, 215);
-    border-radius: 5px;
-    margin: 0px;
-    margin-bottom: 0.6em;
-    padding: 5px;
-    box-sizing: border-box;
+#content-form input,
+#content-form select,
+#content-form textarea {
+	width: 100%;
+	height: 35px;
+	border: 2px solid rgb(215, 215, 215);
+	border-radius: 5px;
+	margin: 0px;
+	margin-bottom: 0.6em;
+	padding: 5px;
+	box-sizing: border-box;
 }
 
-#content-form textarea{
-    height: 120px;
-    max-width: 100%;
+#content-form textarea {
+	height: 120px;
+	max-width: 100%;
 }
 
-#notification-div{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 0.9em;
-    margin-top: 0.7em;
-    margin-bottom: 0.5em;
+#notification-div {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 0.9em;
+	margin-top: 0.7em;
+	margin-bottom: 0.5em;
 }
 
-#notification-div p{
-    width: 100%;
-    margin: 0;
+#notification-div p {
+	width: 100%;
+	margin: 0;
 }
 
-.checkbox-div{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.checkbox-div {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
-#notification-div  input{
-    margin-top: 45%;
-    margin-left: 6px;
-    height: 14px;
-
+#notification-div input {
+	margin-top: 45%;
+	margin-left: 6px;
+	height: 14px;
 }
 
 #exampleModal {
-    display: none;
+	display: none;
 }
 
-
-
 @media only screen and (max-width: 768px) {
-    #title h1{
-        font-size: 30px;
-    }
-    form,#content-form{
-        padding: 0px;
-    }
-
+	#title h1 {
+		font-size: 30px;
+	}
+	form,
+	#content-form {
+		padding: 0px;
+	}
 }

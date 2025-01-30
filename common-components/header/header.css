@@ -1,6 +1,5 @@
-.bg-body-tertiary
-{
-    background-color: black !important;
+.bg-body-tertiary {
+	background-color: black !important;
 }
 
 header {
@@ -12,42 +11,39 @@ header {
 	z-index: 1000;
 }
 
-.navbar-nav .nav-item .nav-link{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    gap: 3px;
+.navbar-nav .nav-item .nav-link {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	gap: 3px;
 }
 
-.navbar-nav .nav-item .nav-link p:hover{
-    color: rgb(255, 234, 96);
+.navbar-nav .nav-item .nav-link p:hover {
+	color: rgb(255, 234, 96);
 }
 
-.nav-item .nav-link img{
-    height: 18px;
+.nav-item .nav-link img {
+	height: 18px;
 }
 
-.nav-item .nav-link p{
-    color: white;
-    font-weight: 600;
-    margin: 0;
+.nav-item .nav-link p {
+	color: white;
+	font-weight: 600;
+	margin: 0;
 }
 
-.navbar-toggler{
-    background-color: orange;
-    width: 2.2em;
-    height: 2.2em;
+.navbar-toggler {
+	background-color: orange;
+	width: 2.2em;
+	height: 2.2em;
 }
 
-.nav-item .disabled p
-{
-    color: rgba(128, 128, 128, 0.662);
+.nav-item .disabled p {
+	color: rgba(128, 128, 128, 0.662);
 }
 
-.nav-item .disabled
-{
-    filter: grayscale(60%);
+.nav-item .disabled {
+	filter: grayscale(60%);
 }
-

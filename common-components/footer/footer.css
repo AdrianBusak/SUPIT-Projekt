@@ -1,50 +1,50 @@
-html, body{
-    margin: 0px;
-    padding: 0px;
+html,
+body {
+	margin: 0px;
+	padding: 0px;
 }
 
-footer{
-    background-image: url(/img/zaiskri-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 190px;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
+footer {
+	background-image: url(/img/zaiskri-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 190px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
 }
 
-footer h2{
-    margin: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
-    font-size: 50px;
+footer h2 {
+	margin: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	font-size: 50px;
 }
 
-footer .first-title{
-    color: white;
-    margin-bottom: 35px;
-    text-transform: uppercase;
+footer .first-title {
+	color: white;
+	margin-bottom: 35px;
+	text-transform: uppercase;
 }
 
-footer .second-title{
-
-    color: rgb(255, 23, 85);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.556);
+footer .second-title {
+	color: rgb(255, 23, 85);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.556);
 }
 
 @media only screen and (max-width: 768px) {
-    footer h2{
-        font-size: 28px;
-    }
-    footer .first-title{
-        margin-bottom: 2px;
-    }
-    footer{
-        height: 120px;
-    }
+	footer h2 {
+		font-size: 28px;
+	}
+	footer .first-title {
+		margin-bottom: 2px;
+	}
+	footer {
+		height: 120px;
+	}
 }
